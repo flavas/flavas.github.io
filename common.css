@@ -1,0 +1,54 @@
+body {
+	background-color: #333;
+}
+.main-section {
+	width: 100%;
+	font-size: 10px;
+	background: #333;
+}
+.title {
+	margin-top: 210px;
+}
+.title-img {
+	width: 14.58%;
+	display: block;
+	margin: 0 auto;
+}
+.tagline {
+	margin-top: 30px;
+	font-size: 200%;
+	text-align: center;
+	color: #565656;
+}
+.mail-wrapper {
+	margin-top: 160px;
+}
+.mail-address {
+	display: block;
+	margin: 0 auto;
+	font-size: 140%;
+	text-align: center;
+	color: #fff;
+}
+@media screen and (max-width: 768px) {
+	.title-img {
+		width: 25%;
+	}
+	.tagline {
+		font-size: 150%;
+	}
+	.mail-address {
+		font-size: 115%;
+	}
+}
+@media screen and (max-width: 375px) {
+	.title-img {
+		width: 30%;
+	}
+	.tagline {
+		font-size: 120%;
+	}
+	.mail-address {
+		font-size: 100%;
+	}
+}
