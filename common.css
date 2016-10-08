@@ -1,54 +1,88 @@
-body {
-	background-color: #333;
+html,body {
+	height: 100%;
+	min-width: 320px;
+	min-height: 320px;
 }
+
+.page-wrapper {
+	position: relative;
+	height: 100%;
+	background-color: #333333;
+}
+
+.section-body,
+.section-footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.section-body {
+	top: 35%;
+}
+.section-footer {
+	bottom: 15%;
+}
+
 .main-section {
 	width: 100%;
 	font-size: 10px;
-	background: #333;
+}
+
+.title,
+.tagline {
+	margin-left: auto;
+	margin-right: auto;
 }
 .title {
-	margin-top: 210px;
+	width: 160px;
 }
-.title-img {
-	width: 14.58%;
-	display: block;
-	margin: 0 auto;
+.team-name {
+	fill: #FFFFFF;
 }
-.tagline {
+.title + .tagline {
 	margin-top: 30px;
-	font-size: 200%;
-	text-align: center;
-	color: #565656;
 }
-.mail-wrapper {
-	margin-top: 160px;
+
+.tagline {
+	width: 360px;
 }
-.mail-address {
+
+.btn-contact,
+.btn-contact > svg {
+	transition: background-color 0.2s, fill 0.2s;
+}
+.btn-contact {
 	display: block;
-	margin: 0 auto;
-	font-size: 140%;
-	text-align: center;
-	color: #fff;
+	width: 120px;
+	padding: 10px 26px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #565656;
+	border-radius: 10px;
 }
-@media screen and (max-width: 768px) {
-	.title-img {
-		width: 25%;
+.btn-contact > svg {
+	fill: #ADADAD;
+}
+.btn-contact:hover {
+	background-color: #7A7A7A;
+}
+.btn-contact:hover > svg {
+	fill: #EDEDED;
+}
+
+@media screen and (max-width: 568px) {
+	.title {
+		width: 100px;
 	}
 	.tagline {
-		font-size: 150%;
+		width: 280px;
 	}
-	.mail-address {
-		font-size: 115%;
+	.title + .tagline {
+		margin-top: 15px;
 	}
-}
-@media screen and (max-width: 375px) {
-	.title-img {
-		width: 30%;
-	}
-	.tagline {
-		font-size: 120%;
-	}
-	.mail-address {
-		font-size: 100%;
+
+	.btn-contact {
+		width: 80px;
+		padding: 16px 12px;
 	}
 }
